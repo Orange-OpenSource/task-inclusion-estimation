@@ -1,0 +1,43 @@
+[project]
+name = "task-inclusion"
+version = "0.1.0"
+description = "Code to reproduce the experiments of the paper statistical deficiency for task inclusion estimation"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "absl-py>=2.2.2",
+    "accelerate>=1.6.0",
+    "bert-score>=0.3.13",
+    "datasets>=3.3.2",
+    "emir",
+    "evaluate>=0.4.3",
+    "fsspec>=2025.3.0",
+    "hf-xet>=1.0.0",
+    "ipython>=9.1.0",
+    "jupyter>=1.1.1",
+    "logzero>=1.7.0",
+    "matplotlib>=3.10.1",
+    "nltk>=3.9.1",
+    "numpy>=2.2.3",
+    "peft>=0.15.2",
+    "py7zr>=0.22.0",
+    "pydantic>=2.10.6",
+    "pytest>=8.3.5",
+    "rich>=13.9.4",
+    "rich-argparse>=1.7.0",
+    "rouge-score>=0.1.2",
+    "seaborn>=0.13.2",
+    "sentence-transformers>=3.4.1",
+    "sentencepiece>=0.2.0",
+    "torch>=2.6.0",
+    "torcheval>=0.0.7",
+    "tqdm>=4.67.1",
+    "transformers>=4.51.0",
+    "unsloth>=2025.4.7",
+]
+
+[tool.uv]
+no-build-isolation-package = ["unsloth"]
+
+[tool.uv.sources]
+emir = {git = "https://github.com/ills-montreal/emir"}
